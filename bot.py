@@ -7,7 +7,7 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 load_dotenv()
 
 TOKEN = os.getenv("TELEGRAM_TOKEN")
-API_URL = "http://localhost:8000"
+API_URL = "https://dashboard-financiero-production.up.railway.app"
 
 async def gasto(update: Update, context: ContextTypes.DEFAULT_TYPE):
     try:
